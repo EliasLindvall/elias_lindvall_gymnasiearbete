@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@mixin flex-center {
+    // display flex och sätter allt i mitten
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-direction-justify ($direction, $justify) {
+    // Flex mixin där man väljer vilken riktning och justify content
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin margin-padding-zero {
+    // sätter margin och padding till 0 för ett element
+    margin: 0;
+    padding: 0;
+}
+
+@mixin size($height, $width) {
+    // mixin för att sätta höjd och bredd
+    height: $height;
+    width: $width;
+}
+
+@mixin text-color-size-weight-align($color, $size, $weight, $align) {
+    // mixin för att styla text
+    font-family: $main-font;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    text-align: $align;
+}
+
+@mixin border($radius, $color, $style) {
+    // det finns redan en border property där man kan sätta border width, style och color men jag behövde inte sätta width så jag gjorde en egen som satte in border radius istället.
+    border-radius: $radius;
+    border-color: $color;
+    border-style: $style;
+}
+
+@function ind($element, $sub-element: false) {
+    // Funktion för att lätt hålla reda på z-index
+    $index: map-get($z-indices, $element);
+
+    @if $sub-element {
+        $index: map-get($index, $sub-element);
+    }
+
+    @return $index;
+}

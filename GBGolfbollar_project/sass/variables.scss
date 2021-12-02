@@ -1,0 +1,14 @@
+
+//fonts
+$product-font:'Source Code Pro', monospace;
+
+// for z-index function
+$z-indices: (
+    "menu": (
+        "items": 2,
+        "social": 3,
+    ),
+    "main-content": 1,
+    "footer": -1,
+);
+// ----

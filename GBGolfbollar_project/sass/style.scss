@@ -1,0 +1,7 @@
+.container-products {
+    @include flex-direction-justify(row, center);
+    flex-wrap: wrap;
+    
+    
+}
+
