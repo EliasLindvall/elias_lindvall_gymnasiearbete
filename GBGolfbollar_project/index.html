@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
     <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="sass/style.css">
-    <script src="javascript/shopping_cart.js"></script>
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
+        <a class="navbar-brand" href="#">GBGolfbollar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,10 +24,10 @@
               <a class="nav-link active" aria-current="page" href="#">Hem</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Klasser</a>
+              <a class="nav-link" href="#" id="klasser-link">Klasser</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-center" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Golfbollar
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -44,30 +43,41 @@
           </ul>
           
         </div>
-        <a class="navbar-brand me-auto" href="#"><img src="imgs/shopping-cart-icon.png" style="height: 40px;">  Kundvagn</a>
+        <a class="navbar-brand me-auto" type="button" data-bs-toggle="modal1" data-bs-target="#cartModal"><img src="imgs/shopping-cart-icon.png" style="height: 40px;">  Kundvagn</a>
       </div>
     </nav>
     
-      
-      <div class="container">
+    <div class="">
+        <img class="img-fluid" src="imgs/vinter-rea-GBGgolfbollar.jpg" alt="vinter rea">
+    </div>  
+
+    <!--Grid System Popular Products-->
+    
+    <div class="text-center mt-5">
+        <h1>Populäraste bollarna just nu!</h1>
+        <h6>Ladda upp inför säsongen med billiga bollar.</h6>
+    </div>
+
+
+      <div class="container mt-5">
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="product-grid">
                     <div class="product-image6">
-                        <a href="#">
+                        <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <img class="pic-1" src="imgs/prov1.jpg">
                         </a>
                     </div>
                     <div class="product-content">
                         <h3 class="title"><a href="#">Pro V1</a></h3>
+                        <h6>C - Klass (12st)</h6>
                         <div class="price">149.95kr
                             <span>200.00kr</span>
                         </div>
                     </div>
                     <ul class="social">
-                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-search"></i></a></li>
+                        <li><a href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -75,19 +85,19 @@
                 <div class="product-grid">
                     <div class="product-image6">
                         <a href="#">
-                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-2.jpg">
+                            <img class="pic-1" src="imgs/callaway-chromesoft-png.png">
                         </a>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Women's Red Top</a></h3>
-                        <div class="price">$8.00
-                            <span>$12.00</span>
+                        <h3 class="title"><a href="#">Chromesoft</a></h3>
+                        <h6>C - Klass</h6>
+                        <div class="price"> 199.95kr
+                            <span>230.00kr</span>
                         </div>
                     </div>
                     <ul class="social">
                         <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -95,19 +105,19 @@
                 <div class="product-grid">
                     <div class="product-image6">
                         <a href="#">
-                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-3.jpg">
+                            <img class="pic-1" src="imgs/tp5-side-NoBG.png">
                         </a>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Men's Shirt</a></h3>
-                        <div class="price">$11.00
-                            <span>$14.00</span>
+                        <h3 class="title"><a href="#">TP5</a></h3>
+                        <h6>B - Klass</h6>
+                        <div class="price">200 kr
+                            <span>300 kr</span>
                         </div>
                     </div>
                     <ul class="social">
                         <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -115,24 +125,85 @@
                 <div class="product-grid">
                     <div class="product-image6">
                         <a href="#">
-                            <img class="pic-1" src="http://bestjquery.com/tutorial/product-grid/demo10/images/img-4.jpg">
+                            <img class="pic-1" src="imgs/sliten-titleist.png">
                         </a>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">Men's Shirt</a></h3>
-                        <div class="price">$11.00
-                            <span>$14.00</span>
+                        <h3 class="title"><a href="#">Floridabollar</a></h3>
+                        <h6>D - Klass</h6>
+                        <div class="price">1 kr/st
+                            <span>2 kr/st</span>
                         </div>
                     </div>
                     <ul class="social">
                         <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-                        <li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
+    <!-- Grid System Popular Products END-->
+
+    <!-- MODALS-->
+      
+      <div class="modal fade    " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Titleist ProV1 Golfboll</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="imgs/prov1.jpg" alt="prov1">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartModalLabel1">Titleist ProV1 Golfboll</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal1" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal1">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer START-->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-4">
+                    <h6 class="text-uppercase">Om oss</h6>
+                    <p>lorem</p>
+                    <p>ipsum</p>
+                </div>
+                <div class="col mt-4">
+                    <h6 class="text-uppercase">kontakt</h6>
+                    <p><i class="fas fa-phone"></i>  +0738-03 12 13</p>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="text-center">
+            <p> 2021 Copyright: GBGolfbollar</p>
+        </div>
+    </footer>
 </body>
 </html>
+
