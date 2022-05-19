@@ -1,391 +1,1013 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GBGolfbollar</title>
-    <script src="https://kit.fontawesome.com/3ae270f151.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
-    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="sass/style.css">
-    <script src="javascript/shopping_cart.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBGolfbollar</title>
+  <script src="https://kit.fontawesome.com/3ae270f151.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="sass/style.css">
+  <script src="javascript/shopping_cart.js"></script>
 </head>
+
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top shadow-sm">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">GBGolfbollar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Hem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#klasser" id="klasser-link">Klasser</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Golfbollar
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="#titleist">Titleist</a></li>
-                <li><a class="dropdown-item" href="#callaway">Callaway</a></li>
-                
-                <li><a class="dropdown-item" href="#">Top Flite</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-            </li> 
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="imgs/gbgolfbollarlogoCut-removebg-preview.png" alt="gbglogga"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#klasser" id="klasser-link">Klasser</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Golfbollar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#titleist">Titleist</a></li>
+              <li><a class="dropdown-item" href="#callaway">Callaway</a></li>
+              <li><a class="dropdown-item" href="#">Taylormade</a></li>
+              <li><a class="dropdown-item" href="#övrigt">Övriga Bollar</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <a class="navbar-brand" type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><img
+          src="imgs/shopping-cart-icon.png" style="height: 40px;"> Kundvagn</a>
+    </div>
+  </nav>
+
+  <div class="">
+    <img class="img-fluid" src="imgs/vinter-rea-GBGgolfbollar.jpg" alt="vinter rea">
+  </div>
+
+  <!--Grid System Popular Products-->
+
+  <div class="text-center mt-5">
+    <h1>Populäraste bollarna just nu!</h1>
+    <h6>Ladda upp inför säsongen med billiga bollar.</h6>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal">
+              <img class="" src="imgs/prov1.jpg">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Pro V1</a></h3>
+            <h6>C - Klass (12st)</h6>
+            <div class="price">149.95kr</div>
+            <span class="price-span">200.00kr</span>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal"><i class="fa fa-shopping-cart"></i></a></li>
           </ul>
-          
         </div>
-        <a class="navbar-brand me-auto" type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><img src="imgs/shopping-cart-icon.png" style="height: 40px;">  Kundvagn</a>
       </div>
-    </nav>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal">
+              <img class="" src="imgs/callaway-chromesoft-png.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Chromesoft</a></h3>
+            <h6>C - Klass</h6>
+            <div class="price"> 199.95kr</div>
+            <span class="price-span">230.00kr</span>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal">
+              <img class="" src="imgs/tp5-side-NoBG.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">TP5</a></h3>
+            <h6>B - Klass</h6>
+            <div class="price">249.95 kr</div>
+            <span class="price-span">300.00 kr</span>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal">
+              <img class="pic-1" src="imgs/sliten-titleist.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Floridabollar</a></h3>
+            <h6>D - Klass</h6>
+            <div class="price">1 kr/st</div>
+            <span class="price-span">2 kr/st</span>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View"><i class="fa fa-search" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grid System Popular Products END-->
+
+  <!-- Klasser text-->
+
+  <div class="container text-center pt-5" id="klasser">
+    <div class="row justify-content-sm-center">
+      <div class="col-sm-6">
+        <h1>Våra Klasser</h1>
+        <p>Våra bollar är indelade i 4 olika klasser beroende på kvalitet där A klass är högst kvalite och D klass sämst
+          kvalite. A klass är bra kvalitet för pengarna och D klass mycket bollar för pengarna </p>
+        <h2 class="pt-4">A klass</h2>
+        <p>A-klass är bollar i våran högsta kvalite dessa har bara spelats någon enstaka gång innan de har hittats. De
+          är lika bra som nya bollar fast till ett billigare pris.</p>
+        <h2 class="pt-4">B Klass</h2>
+        <p>Golfbollar med små skönhetsfel eller lätta nyansskillnader. Mycket fina bollar med 100% prestanda.</p>
+        <h2 class="pt-4">C Klass</h2>
+        <p>Hög prestanda till riktigt bra pris. Det som kännetecknar en C klass boll är mindre skrapmärken och små nyansskillnader.</p>
+        <h2 class="pt-4">D Klass</h2>
+        <p>D klassen passar utmärkt som träningsbollar. Mycket skrapmärken och missfärgningar är vanligt. Mindre jack i det yttre skalet förekommer.</p>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  <!--TITLEIST BALLS-->
+
+  <div class="company-title mt-5" id="titleist">
+    <h1>Titleist</h1>
+    <hr>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal">
+              <img class="" src="imgs/prov1.webp">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Pro V1</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">110 - 300kr</div>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#prov1Modal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#prov1xModal">
+              <img class="" src="imgs/prov1x.webp">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Pro V1X</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">110 - 300kr</div>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#prov1xModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#AVXModal">
+              <img class="" src="imgs/titleistAVX.webp">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">AVX</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">135 - 360kr</div>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#AVXModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#AVXModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#TruFeelModal">
+              <img class="" src="imgs/tileistTrufeel.webp">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">TruFeel</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">135 - 360kr</div>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#TruFeelModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#TruFeelModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--TITLEIST END-->
+
+  <!--CALLAWAY BALLS-->
+
+  <div class="company-title mt-5" id="callaway">
+    <h1>Callaway</h1>
+    <hr>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal">
+              <img class="" src="imgs/callaway-chromesoft-png.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Chromesoft</a></h3>
+            <h6>A-D Klass</h6>
+            <div class="price">150 - 400kr</div>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftxModal">
+              <img class="" src="imgs/ChromeSoftX.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Chromesoft X</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">150 - 400kr</div>
     
-    <div class="">
-        <img class="img-fluid" src="imgs/vinter-rea-GBGgolfbollar.jpg" alt="vinter rea">
-    </div>  
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftxModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#chromesoftxModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
 
-    <!--Grid System Popular Products-->
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#superhotModal">
+              <img class="" src="imgs/callawaySuperhot.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Superhot</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">110 - 300kr</div>
     
-    <div class="text-center mt-5">
-        <h1>Populäraste bollarna just nu!</h1>
-        <h6>Ladda upp inför säsongen med billiga bollar.</h6>
-    </div>
-
-
-      <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image6">
-                        <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <img class="" src="imgs/prov1.jpg">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Pro V1</a></h3>
-                        <h6>C - Klass (12st)</h6>
-                        <div class="price">149.95kr
-                            <span>200.00kr</span>
-                        </div>
-                    </div>
-                    <ul class="social">
-                        <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-search"></i></a></li>
-                        <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image6">
-                        <a href="#">
-                            <img class="" src="imgs/callaway-chromesoft-png.png">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Chromesoft</a></h3>
-                        <h6>C - Klass</h6>
-                        <div class="price"> 199.95kr
-                            <span>230.00kr</span>
-                        </div>
-                    </div>
-                    <ul class="social">
-                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image6">
-                        <a href="#">
-                            <img class="" src="imgs/tp5-side-NoBG.png">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">TP5</a></h3>
-                        <h6>B - Klass</h6>
-                        <div class="price">200 kr
-                            <span>300 kr</span>
-                        </div>
-                    </div>
-                    <ul class="social">
-                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image6">
-                        <a href="#">
-                            <img class="pic-1" src="imgs/sliten-titleist.png">
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title"><a href="#">Floridabollar</a></h3>
-                        <h6>D - Klass</h6>
-                        <div class="price">1 kr/st
-                            <span>2 kr/st</span>
-                        </div>
-                    </div>
-                    <ul class="social">
-                        <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                        <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#superhotModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#superhotModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
         </div>
-    </div>
-    <!-- Grid System Popular Products END-->
+      </div>
 
-    <!-- Klasser text-->
-
-    <div class="container text-center" id="klasser">
-      <div class="row justify-content-md-center">
-        <div class="col-sm-6">
-          <h1>Våra Klasser</h1>
-          <p>Våra bollar är indelade i 4 olika klasser beroende på kvalitet där A klass är högst kvalite och D klass sämst kvalite. A klass är bra kvalitet för pengarna och D klass mycket bollar för pengarna </p>
-          <h2 class="pt-4">A klass</h2>
-          <p>A-klass är bollar i våran högsta kvalite dessa har bara spelats någon enstaka gång innan de har hittats. De är lika bra som nya bollar fast till ett billigare pris.</p>
-          <h2 class="pt-4">B Klass</h2>
-          <p> lorem ipsum sit amor bollar är bra klass med små skönhetsfel</p>
-          <h2 class="pt-4">C Klass</h2>
-          <p> lorem ipsum sit amor</p>
-          <h2 class="pt-4">D Klass</h2>
-          <p></p>
-
-        </div>
-        
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#supersoftModal">
+              <img class="" src="imgs/SuperSOft.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Supersoft</a></h3>
+            <h6>A-D Klass (12st)</h6>
+            <div class="price">110 - 300kr</div>
+    
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Visa Mer" type="button" data-bs-toggle="modal" data-bs-target="#supersoftModal"><i
+                  class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#supersoftModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <!--Titleist-->
+  <!--CALLAWAY END-->
 
-    <div class="company-title" id="titleist">
-      <h1>Titleist</h1>
-      <hr>
+  <!--TAYLORMADE BALLS-->
+  <div class="company-title mt-5" id="taylormade">
+    <h1>Taylormade</h1>
+    <hr>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal">
+              <img class="" src="imgs/tp5-side-NoBG.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">TP5</a></h3>
+            <h6>A-D Klass</h6>
+            <div class="price">125 - 350kr</div>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#tp5Modal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#tp5xModal">
+              <img class="" src="imgs/tp5x.jpg">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">TP5X</a></h3>
+            <h6>A-D Klass</h6>
+            <div class="price">125 - 350kr</div>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#tp5xModal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#tp5xModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#distanceModal">
+              <img class="" src="imgs/distance+.jpg">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Distance +</a></h3>
+            <h6>A-D Klass</h6>
+            <div class="price">125 - 350kr</div>
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#distanceModal"><i class="fa fa-search"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#distanceModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </div>
+  <!--TAYLORMADE END-->
 
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="product-grid">
-              <div class="product-image6">
-                  <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img class="" src="imgs/prov1.jpg">
-                  </a>
+  <div class="company-title mt-5" id="övrigt">
+    <h1>Övriga Bollar</h1>
+    <hr>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+          <div class="product-image6">
+            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal">
+              <img class="pic-1" src="imgs/sliten-titleist.png">
+            </a>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="#">Floridabollar</a></h3>
+            <h6>D - Klass</h6>
+            <div class="price">1 kr/st</div>
+            <span class="price-span">2 kr/st</span>
+
+          </div>
+          <ul class="social">
+            <li><a href="" data-tip="Quick View"><i class="fa fa-search" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal"></i></a></li>
+            <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn" type="button" data-bs-toggle="modal" data-bs-target="#floridaModal"><i class="fa fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--PRODUCT MODALS-->
+  <!--TITLEIST MODALS-->
+  <div class="modal fade" id="prov1Modal" tabindex="-1" aria-labelledby="prov1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/prov1.webp" alt="prov1">
               </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Pro V1</a></h3>
-                  <h6>A-C Klass (12st)</h6>
-                  <div class="price">150 - 300.00kr</div>
-                      
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">ProV1</h2>
+                  <span>Titleist</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Nya Titleist Pro V1 har prestanda i alla delar med mer längd, mycket lite backspinn från tee, penetrerande bollflykt, större Drop-and-Stop-kontroll kring greenerna samt mjukare känsla. </p>
+                  <h6>Välj klass</h6>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
               </div>
-              <ul class="social">
-                  <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-search"></i></a></li>
-                  <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i Kundvagn</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="product-grid">
-              <div class="product-image6">
-                  <a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img class="" src="imgs/prov1x.jpg">
-                  </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="prov1xModal" tabindex="-1" aria-labelledby="prov1xModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/prov1x.webp" alt="prov1x">
               </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Pro V1X</a></h3>
-                  <h6>C - Klass (12st)</h6>
-                  <div class="price">149.95kr
-                      <span>200.00kr</span>
-                  </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">ProV1X</h2>
+                  <span>Titleist</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Nya Titleist Pro V1x har prestanda i alla delar med mer längd, hög bollbana, mindre backspinn från tee och större Drop-and-Stop-kontroll kring greenerna samt mjukare känsla.</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
               </div>
-              <ul class="social">
-                  <li><a href="" data-tip="Quick View" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-search"></i></a></li>
-                  <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
+  </div>
+  </div>
 
-
-    <!--Titleist END-->
-
-    <!--CALLAWAY-->
-
-    <div class="company-title" id="callaway">
-      <h1>Callaway</h1>
-      <hr>
-    </div>
-
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="product-grid">
-              <div class="product-image6">
-                  <a href="#">
-                      <img class="" src="imgs/callaway-chromesoft-png.png">
-                  </a>
+  <div class="modal fade" id="AVXModal" tabindex="-1" aria-labelledby="AVXModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/titleistAVX.webp" alt="prov1">
               </div>
-              <div class="product-content">
-                  <h3 class="title"><a href="#">Chromesoft</a></h3>
-                  <h6>C - Klass</h6>
-                  <div class="price"> 199.95kr
-                      <span>230.00kr</span>
-                  </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">AVX</h2>
+                  <span>Titleist</span>
+                  <div class="price">179.95kr</div>
+                  <div class="original-price" style="display: none;">179.95</div>
+                  <p>Nya Titleist AVX är bollar för golfspelare som vill ta nästa steg i sin golf med avancerad teknik som levererar låg bollflykt, mindre spinn med järnen för märkbart mer längd, otroligt mjuk känsla och nu ännu större kontroll.</p>
+                  <h6>Välj klass</h6>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
               </div>
-              <ul class="social">
-                  <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
-                  <li><a class="cart-add" href="" data-tip="Lägg till i Kundvagn"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i Kundvagn</button>
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
-    <!-- MODALS-->
-      
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <img class="img-fluid" src="imgs/prov1.jpg" alt="prov1">
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="product-content">
-                      <h2 class="product-name">Titleist ProV1</h2>
-                      <div class="price">149.95kr
-                        <span>200.00kr</span>
+  </div>
+
+  <div class="modal fade" id="TruFeelModal" tabindex="-1" aria-labelledby="trufeelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/tileistTrufeel.webp" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">TruFeel</h2>
+                  <span>Titleist</span>
+                  <div class="price">179.95kr</div>
+                  <div class="original-price" style="display: none;">179.95</div>
+                  <p>Nya Titleist TruFeel är Titleists mjukaste golfboll som nu vidareutvecklats för mer längd än någonsin och med ett tunnare skal för bättre känsla kring greenerna. Naturligtvis får du den kvalitet du förväntar dig av golfvärldens mest spelade boll.</p>
+                  <h6>Välj klass</h6>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i Kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+  <!--TITLEIST MODALS END-->
+
+  <!--CALLAWAY MODALS START-->
+
+  <div class="modal fade" id="chromesoftModal" tabindex="-1" aria-labelledby="chromesoftModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/callaway-chromesoft-png.png" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Chromesoft</h2>
+                  <span>Callaway</span>
+                  <div class="price">199.95kr</div>
+                  <div class="original-price" style="display: none;">199.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                  data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="chromesoftxModal" tabindex="-1" aria-labelledby="chromesoftxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/ChromeSoftX.png" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Chromesoft X</h2>
+                  <span>Callaway</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                  data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="superhotModal" tabindex="-1" aria-labelledby="superhotModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/callawaySuperhot.png" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Superhot</h2>
+                  <span>Callaway</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                  data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="supersoftModal" tabindex="-1" aria-labelledby="supersoftModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/SuperSOft.png" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Supersoft</h2>
+                  <span>Callaway</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                  data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="addedToCartModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center p-4">
+          <h5>Artikeln har lagts till i kundvagnen</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Gå till kundvagn</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fortsätt handla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="tp5Modal" tabindex="-1" aria-labelledby="tp5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/tp5-side-NoBG.png" alt="tp5">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">TP5</h2>
+                  <span>Taylormade</span>
+                  <div class="price">250.43kr</div>
+                  <div class="original-price" style="display: none;">166.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option selected value="2">B-klass</option>
+                    <option value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="tp5xModal" tabindex="-1" aria-labelledby="tp5xModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/tp5x.jpg" alt="tp5">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">TP5X</h2>
+                  <span>Taylormade</span>
+                  <div class="price">250.43kr</div>
+                  <div class="original-price" style="display: none;">166.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option selected value="2">B-klass</option>
+                    <option value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="distanceModal" tabindex="-1" aria-labelledby="distanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/distance+.jpg" alt="tp5">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Distance +</h2>
+                  <span>Taylormade</span>
+                  <div class="price">149.95kr</div>
+                  <div class="original-price" style="display: none;">149.95</div>
+                  <p>Lorem ipsum sit amor fick du la tosd sjef fwjf jdke keud buj</p>
+                  <select class="form-select">
+                    <option value="1">A-klass</option>
+                    <option value="2">B-klass</option>
+                    <option selected value="3">C-klass</option>
+                    <option value="4">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="floridaModal" tabindex="-1" aria-labelledby="floridaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-fluid" src="imgs/sliten-titleist.png" alt="prov1">
+              </div>
+              <div class="col-lg-6">
+                <div class="product-content">
+                  <h2 class="product-name">Floridabollar</h2>
+                  <span>Blandade märken</span>
+                  <div class="price">1kr</div>
+                  <div class="original-price" style="display: none;">1</div>
+                  <p>Floridabollar är blandade bollar i D klass som passar bäst som träningsbollar. Väldigt mycket boll för pengarna</p>
+                  <h6>Välj klass</h6>
+                  <select class="form-select">
+                    <option selected value="3">D-klass</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+                <button type="button" class="btn btn-primary cart-add" data-bs-toggle="modal"
+                data-bs-target="#addedToCartModal">Lägg till i Kundvagn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="modal fade" id="payModal" aria-hidden="true">
+    <div class="modal-dialog"></div>
+  </div>
+  <!--CART MODAL-->
+
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel1">Kundvagn</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container bootstrap snippets bootdey">
+            <div class="col-md-9 col-sm-8 content">
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-info panel-shadow">
+                    <div class="panel-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Produkt</th>
+                              <th>Beskrivning</th>
+                              <th>Kvantitet</th>
+                              <th>Pris</th>
+
+                            </tr>
+                          </thead>
+                          <tbody id="cart-container">
+                            
+                          </tbody>
+                          <tr>
+                            <td colspan="6">&nbsp;</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="4" class="text-right"><strong>Total</strong></td>
+                            <td class="cart-total">0.00kr</td>
+                          </tr>
+
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
-              <button type="button" class="btn btn-primary cart-add">Lägg till i kundvagn</button>
-            </div>
           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          <button type="button" class="btn btn-primary purchase-button">Betala</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer START-->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-4">
+          <h6 class="text-uppercase">Om oss</h6>
+          <p>Vi på GBGolfbollar säljer använda bollar till ett superpris!</p>
+        </div>
+        <div class="col mt-4">
+          <h6 class="text-uppercase">kontakt</h6>
+          <p><i class="fas fa-phone"></i> +46 738-03 12 13</p>
+          <p><i class="fas fa-envelope"></i> gbgolfbollar@gmail.com</p>
+        </div>
+        <div class="col mt-4">
+          <h6 class="text-uppercase">länkar</h6>
+          <p><a href="#">Hem</a></p>
+          <p><a href="#klasser">Klasser</a></p>
         </div>
       </div>
 
-      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="cartModalLabel1">Kundvagn</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container bootstrap snippets bootdey">
-                <div class="col-md-9 col-sm-8 content">
-                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-info panel-shadow">
-                                <div class="panel-body"> 
-                                    <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                        <tr>
-                                            <th>Produkt</th>
-                                            <th>Beskrivning</th>
-                                            <th>Kvantitet</th>
-                                            <th>Pris</th>
-                                            
-                                        </tr>
-                                        </thead>
-                                        <tbody id="cart-container">
-                                            <tr name="cartRow">
-                                                <td><img src="imgs/prov1.jpg" class="img-cart"></td>
-                                                <td><strong>Pro V1</strong><p>C klass</p></td>
-                                                <td>
-                                               
-                                                  <input class="form-control" type="text" value="1">
-
-                                                
-                                                </td>
-                                                <td class="price">149.95kr</td>
-                                                <td>
-                                                  <button type="button" class="btn btn-danger fa fa-trash-o" rel="tooltip"></a>
-                                                </td>
-                                                
-                                            </tr>
-                                            <tr name="cartRow">
-                                                <td><img src="imgs/tp5-side-NoBG.png" class="img-cart"></td>
-                                                <td><strong>TP5</strong><p>B Klass</p></td>
-                                                <td>
-                                                  <input class="form-control" type="number" value="1">
-                                                
-                                                </td>
-                                                <td class="price">199.95kr</td>
-                                                <td>
-                                                  <button type="button" class="btn btn-danger fa fa-trash-o" rel="tooltip"></button>
-                                                </td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td colspan="6">&nbsp;</td>
-                                            </tr>
-                                      
-                                            <tr>
-                                                <td colspan="4" class="text-right"><strong>Total</strong></td>
-                                                <td class="cart-total">349.90kr</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
-              <button type="button" class="btn btn-primary">Betala</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- Footer START-->
-    <footer class="bg-light text-center text-lg-start">
-        <div class="container">
-            <div class="row">
-                <div class="col mt-4">
-                    <h6 class="text-uppercase">Om oss</h6>
-                    <p>lorem</p>
-                    <p>ipsum</p>
-                </div>
-                <div class="col mt-4">
-                    <h6 class="text-uppercase">kontakt</h6>
-                    <p><i class="fas fa-phone"></i>  +0738-03 12 13</p>
-                </div>
-            </div>
-            
-        </div>
-        <hr>
-        <div class="text-center">
-            <p> 2021 Copyright: GBGolfbollar</p>
-        </div>
-    </footer>
+    </div>
+    <hr>
+    <div class="text-center">
+      <p> 2021 Copyright: GBGolfbollar</p>
+    </div>
+  </footer>
 </body>
 </html>
-

@@ -1,5 +1,16 @@
+@media (min-width: 992px) {
+  .navbar li {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
 .img-cart {
-  width: 5vw;
+  width: 75px;
+}
+
+.cartRow {
+  color: #000;
 }
 
 .company-title {
@@ -7,7 +18,7 @@
 }
 
 .company-title hr {
-  width: auto;
+  width: 80%;
   position: relative;
 }
 
@@ -78,7 +89,7 @@
   color: #5bc236;
 }
 
-.price span {
+.price-span {
   color: #999;
   font-size: 15px;
   font-weight: 400;
